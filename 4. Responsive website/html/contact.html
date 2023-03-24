@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Website </title>
+    <link rel="stylesheet" href="../Css/contact.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <!-- "Navbar-Section" starts------------------------------------------------------------------------------------------------------------------>
+
+
+    <section class="Navbar-Section">
+        <nav>
+
+            <img class="logo" src="../Images/logo.png" alt="">
+
+            <div class="menu">
+                <ul id="nav-links">
+                    <i class=" fa-solid fa-xmark " onclick="hidemenu()"></i>
+                    <li><a href="../html/edu.html">HOME</a></li>
+                    <li><a href="../html/About.html">ABOUT</a></li>
+                    <li><a href="../html/course.html">COURSE</a></li>
+                    <li><a href="../html/blog.html">BLOG</a></li>
+                    <li><a href="../html/contact.html">CONTACT</a></li>
+
+                </ul>
+                <i class="fa-solid fa-bars " onclick="showmenu()"></i>
+            </div>
+        </nav>
+
+
+        <h1 class="heading-About-us">Contact Us</h1>
+    </section>
+    <!-- "Navbar-Section ends-------------------------------------------------------------------------------------------------------------------->
+    <!-- "Body-Section starts-------------------------------------------------------------------------------------------------------------------->
+  <sction class="Body">
+    <div class="location">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7477.481665357843!2d78.03673066980673!3d30.354665443851033!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3908d623ac423f27%3A0x3bee759f8f6c1fee!2sChitavad%2C%20Dehradun%2C%20Uttarakhand%20248014!5e1!3m2!1sen!2sin!4v1679634593144!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    </div>
+     
+    <div class="Contact">
+        <div class="contact-content">
+            <div class="address">
+                <i class="fa-solid fa-house"></i> 
+                <div class="address-heading">
+                  <h3>XYZ ROAD,ABC BUILDING</h3>
+                  <p>dehradun,uttarakhand IN</p>
+                </div>
+            </div>
+            <div class="phone">
+                <i class="fa-solid fa-phone"></i>
+                <div class="phone-heading">
+                  <h3>+91 58690 25486</h3>
+                  <p>Monday to Saturday,10AM to 10PM</p>
+                </div>
+            </div>
+            <div class="E-mail">
+                <i class="fa-solid fa-comment"></i>
+                <div class="E-Mail-heading">
+                  <h3>info@gmail.com</h3>
+                  <p>Email us Your query</p>
+                </div>
+            </div> 
+       </div>
+    
+        <div class="Form">
+            <form action="">
+                <input type="text" placeholder="Enter Your Name">
+                <input type="email" placeholder="Enter Your Email">
+                <input type="text" placeholder="Enter Your Subject">
+                <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
+                <button>
+                    <p>Send Message</p>
+                </button>
+            </form>
+        </div>
+    </div>
+
+
+   
+
+
+
+  </sction>
+
+
+
+
+
+
+    <!-- "Body-Section ends-------------------------------------------------------------------------------------------------------------------->
+
+  <!--About-us-Section Starts -------------------------------------------------------------------------------------------------------------------------->
+
+  <section class="About-us">
+    <div class="About-us-content">
+        <h2>About Us</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi laudantium libero aperiam. Hic odio molestiae saepe recusandae veniam consequatur officiis vitae, nihil corrupti Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam officia nam ipsam delectus unde, quod laborum, amet debitis doloribus aperiam facilis quibusdam voluptatum?</p>
+    </div>
+</section>
+
+<!--About-us-Section Ends -------------------------------------------------------------------------------------------------------------------------->
+<!--Footer-Section Starts -------------------------------------------------------------------------------------------------------------------------->
+<section class="Footer">
+    <div class="Social-media">
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-github"></i>
+        <i class="fa-brands fa-linkedin"></i>
+    </div>
+
+    <div class="Copyright">
+        <h3>Made with ❤️ by Bikram Singh</h3>
+    </div>
+    
+</section>
+
+<!-- script Starts ------------------------------------------------------------------------------------------------------------------>
+<script>
+    var navlinks = document.getElementById("nav-links")
+    function showmenu() {
+        navlinks.style.right = "0";
+
+    }
+
+
+    function hidemenu() {
+        navlinks.style.right = "-50.0rem";
+    }
+</script>
+<!-- script ends --------------------------------------------------------------------------------------------------------------------------------->
+</body>
+
+</html>

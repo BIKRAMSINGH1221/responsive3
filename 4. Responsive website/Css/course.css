@@ -1,0 +1,762 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+html {
+    font-size: 10px;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
+}
+
+body::before {
+    content: "";
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(../Images/background.jpg);
+    background-position: left;
+    background-size: cover;
+    height: 40%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+
+}
+
+.heading-About-us {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(10px, 45px);
+    font-size: 3.2rem;
+    color: white;
+
+
+}
+
+
+
+
+
+/* Navbar Section Starts-----------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+nav {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3.5rem 4.5rem;
+}
+
+
+.logo {
+    width: 12.2rem;
+    height: 38px;
+}
+
+
+.menu ul {
+    display: flex;
+    list-style: none;
+}
+
+.menu ul li {
+    padding: 2.0rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+}
+
+.menu ul li a::after {
+    content: "";
+    width: 0%;
+    height: 3px;
+    background: #f44336;
+    display: block;
+    transition: 0.5s;
+    margin: auto;
+}
+
+.menu ul li a:hover::after {
+    width: 100%;
+
+}
+
+.menu ul li a:hover {
+    color: #f44336;
+}
+
+.menu ul i,
+.menu i {
+    display: none;
+}
+
+
+/* Navbar Section Ends--------------------------------------------------------------------------------------------------------- */
+/* Courses Section Starts------------------------------------------------------------------------------------------------------------------------ */
+
+.Courses {
+    position: absolute;
+    bottom: 5%;
+    width: 100%;
+}
+
+
+.Courses-Div {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+}
+
+
+.Course-Content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2.5rem 0rem;
+    line-height: 1.4;
+
+}
+
+.Course-Content h1 {
+    font-size: 4.2rem;
+    font-weight: 750;
+
+}
+
+.Course-Content p {
+    font-size: 1.2rem;
+    color: grey;
+    font-weight: 200;
+    line-height: 2;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.Course-Card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 87%;
+    padding: 3.2rem;
+    margin: 1rem;
+    background-color: #f6debf;
+    border-radius: 1rem;
+
+}
+
+
+.Course-Card:hover {
+    box-shadow: 0 0 2.0rem 0 rgba(0, 0, 0, 0.2);
+}
+
+.Course-Card h3 {
+    font-size: 2.0rem;
+    text-align: center;
+    padding: 2.0rem;
+}
+
+.Course-Card p {
+    font-size: 1.2rem;
+    text-align: center;
+    color: grey;
+}
+
+
+/* Courses Section Ends------------------------------------------------------------------------------------------------------------------------ */
+/* Facilities Section Starts------------------------------------------------------------------------------------------------------------------------ */
+
+
+.Our-Facility {
+    position: absolute;
+    bottom: -59rem;
+    align-items: center;
+}
+
+.Facility-Content {
+    text-align: center;
+    margin-bottom: 2.2rem;
+    
+}
+
+.Facility-Content h3 {
+    font-size: 4.2rem;
+    font-weight: 750;
+}
+
+.Facility-Content p {
+    font-size: 1.2rem;
+    color: grey;
+    font-weight: 200;
+    line-height: 2;
+
+}
+
+.Our-Facility-Card {
+    display: flex;                                                
+    margin: 0 14.2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.Img-Facility {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 75%;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+}
+
+
+.Img-Facility img {
+    width: 100%;
+    border-radius: 1rem;
+    position: relative;
+    left: -2.6rem;
+    padding: 1.2rem;
+
+}
+
+.Img-Facility-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 1.2rem;
+}
+
+
+.Img-Facility-content h2 {
+    font-size: 1.5rem;
+    font-weight: 800;
+    padding: 1.2rem 0;
+}
+
+.Img-Facility-content p {
+    width: 90%;
+    font-size: 1.2rem;
+}
+
+/* Facilities Section Ends------------------------------------------------------------------------------------------------------------------------ */
+/* About-Us Section Starts------------------------------------------------------------------------------------------------------------------------ */
+
+.About-us{
+    position: absolute;
+    bottom: -75rem;
+    width: 100%;
+    text-align: center;
+  
+}
+
+
+.About-us h2{
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin:2.5rem;
+}
+
+.About-us p{
+    width: 80%;
+    margin: auto;
+    color: grey;
+    line-height: 1.2;
+    font-size: 1.2rem;
+  
+}
+
+/* About-Us Section Ends------------------------------------------------------------------------------------------------------------------------ */
+/* Footer-Section starts------------------------------------------------------------------------------------------------------------------------ */
+
+.Footer{
+    position: absolute;
+    bottom: -86rem;
+    width: 100%;
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 2.2;
+    margin-top: 2.2rem;
+}
+
+
+
+
+.fa-brands{
+color: #d11204;
+font-size: 1.5rem;
+padding: 1.2rem;
+cursor: pointer;
+
+}
+
+.Copyright{
+    font-size: 1rem;
+    color: grey;
+    font-weight: 300;
+    margin-bottom: 2.2rem;
+}
+
+
+/* Footer-Section Ends------------------------------------------------------------------------------------------------------------------------ */
+
+
+
+
+
+
+
+
+
+
+/* In this file there is media query for max-width 700px  */
+
+
+
+
+@media(max-width:708px) and (min-width:495px) {
+    body {
+        width: 100%;
+        height: 100%;
+
+    }
+
+
+    /* NAVBAR SECTION STARTS*/
+
+    .menu ul {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        background: #f44336;
+        height: 100vh;
+        width: 30.0rem;
+        right: -50.0rem;
+        top: 0;
+        text-align: left;
+        z-index: 2;
+
+    }
+
+
+    .menu ul i,
+    .menu i {
+        display: block;
+        color: white;
+        margin: 1.0rem;
+        font-size: 2.2rem;
+        cursor: pointer;
+        margin-bottom: 2.0rem;
+    }
+
+    .menu ul li a {
+        padding: 2.0rem;
+    }
+
+
+
+    .menu ul li a::after {
+        content: "";
+        width: 0%;
+        height: 3px;
+        background: #050d2b;
+        display: block;
+        transition: 0.5s;
+        margin: auto;
+    }
+
+    .menu ul li a:hover::after {
+        width: 100%;
+
+    }
+
+    .menu ul li a:hover {
+        color: #020202;
+    }
+
+    /* NAVBAR-SECTION ENDS */
+
+    /* HERO SECTION STARTS */
+
+    .Hero {
+        padding: 2.0px;
+        text-align: center;
+    }
+
+
+    /* HERO SECTION ENDS */
+    /* COURSES SECTION STARTS */
+
+    .cards {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .Courses {
+        position: absolute;
+
+        width: 100%;
+        bottom: -31.2rem;
+    }
+
+    /* COURSES SECTION ENDS */
+
+/* FACILITY SECTION STARTS */
+
+
+.Our-Facility {
+    position: absolute;
+    bottom: -183rem;
+    align-items: center;
+}
+
+
+.Our-Facility-Card {
+    display: flex;
+    margin: 0 14.2rem;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.Our-Facility-Card {
+    display: flex;
+    margin: 0 6rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.Img-Facility {
+    width: 108%;
+}
+
+
+.Img-Facility img {
+    width: 90%;
+    border-radius: 1rem;
+    position: relative;
+    left: -2.6rem;
+    padding: 1.2rem;
+
+}
+
+/* FACILITY SECTION ENDS */
+/* About-Us Section Starts------------------------------------------------------------------------------------------------------------------------ */
+
+.About-us{
+    position: absolute;
+    bottom: -200rem;
+}
+
+
+.About-us h2{
+    font-size: 1.5rem;
+}
+
+.About-us p{
+    width: 90%;  
+    line-height: 1.2;
+    font-size: 1rem;
+  
+}
+
+
+/* Footer-Section starts------------------------------------------------------------------------------------------------------------------------ */
+
+.Footer{
+    position: absolute;
+    bottom: -211rem;
+    
+}
+
+.fa-brands{
+color: #d11204;
+font-size: 1.3rem;
+padding: 1rem;
+cursor: pointer;
+}
+
+.Copyright{
+    font-size: 0.8rem;
+    color: grey;
+    font-weight: 300;
+    margin-bottom: 2.2rem;
+}
+
+
+/* Footer-Section Ends------------------------------------------------------------------------------------------------------------------------ */
+
+/* About-Us Section Ends------------------------------------------------------------------------------------------------------------------------ */
+
+
+
+
+}
+
+
+
+
+
+/* Mobile Phone Media Query  (max-width:450px)----------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------- */
+
+
+
+@media(max-width:495px) {
+
+    body {
+        width: 100%;
+        height: 100%;
+
+    }
+
+
+    /* NAVBAR SECTION STARTS*/
+
+    .menu ul {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        background: #f44336;
+        height: 100vh;
+        width: 30.0rem;
+        right: -50.0rem;
+        top: 0;
+        text-align: left;
+        z-index: 2;
+
+    }
+
+
+    .menu ul i,
+    .menu i {
+        display: block;
+        color: white;
+        margin: 1.0rem;
+        font-size: 2.2rem;
+        cursor: pointer;
+        margin-bottom: 2.0rem;
+    }
+
+    .menu ul li a {
+        padding: 2.0rem;
+    }
+
+
+
+    .menu ul li a::after {
+        content: "";
+        width: 0%;
+        height: 3px;
+        background: #050d2b;
+        display: block;
+        transition: 0.5s;
+        margin: auto;
+    }
+
+    .menu ul li a:hover::after {
+        width: 100%;
+
+    }
+
+    .menu ul li a:hover {
+        color: #020202;
+    }
+
+    /* NAVBAR-SECTION ENDS */
+
+    /* HERO SECTION STARTS */
+
+    .Hero {
+        padding: 2.0px;
+        text-align: center;
+    }
+
+    .Hero h1 {
+        font-size: 4.5rem;
+
+    }
+
+    .Hero p {
+        font-size: 1.2rem;
+    }
+
+
+    /* HERO SECTION ENDS */
+    /* COURSES SECTION STARTS */
+
+    .cards {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .Courses {
+        position: absolute;
+
+        width: 100%;
+        bottom: -80.2rem;
+    }
+
+    .Course-Content h1 {
+        font-size: 3.8rem;
+        text-align: center;
+    }
+
+    .Course-Content p {
+        text-align: center;
+    }
+
+
+
+    /* COURSES SECTION ENDS */
+
+
+
+        /* FACILITY SECTION STARTS */
+
+
+        .Our-Facility {
+            position: absolute;
+            bottom: -218rem;
+            align-items: center;
+        }
+    
+    
+        .Our-Facility-Card {
+            display: flex;
+            margin: 0 14.2rem;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+    
+    
+    
+    
+        .Our-Facility-Card {
+            display: flex;
+            margin: 0 7.2rem;
+            justify-content: center;
+            align-items: center;
+        }
+    
+        .Img-Facility {
+            width: 136%;
+            margin: auto;
+            display: inline-block;
+        }
+    
+        .Facility-Content {
+            width: 75%;
+            margin: auto;
+            padding-bottom: 1.2rem;
+        }
+    
+        .Img-Facility-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            padding: 1.2rem;
+            position: relative;
+            left: -12px;
+            padding-left: 0;
+    
+        }
+    
+        /* FACILITY SECTION ENDS */
+
+
+        
+/* About-Us Section Starts------------------------------------------------------------------------------------------------------------------------ */
+
+.About-us{
+    position: absolute;
+    bottom: -236rem;
+}
+
+
+.About-us h2{
+    font-size: 1.5rem;
+}
+
+.About-us p{
+    width: 95%;  
+    line-height: 1.5;
+    font-size: 1rem;
+  
+}
+
+/* About-Us Section Ends------------------------------------------------------------------------------------------------------------------------ */
+
+/* Footer-Section starts------------------------------------------------------------------------------------------------------------------------ */
+
+.Footer{
+    position: absolute;
+    bottom: -246rem; 
+}
+
+.fa-brands{
+color: #d11204;
+font-size: 1.1rem;
+padding: 0.6rem;
+cursor: pointer;
+}
+
+.Copyright{
+  
+    font-size: 0.8rem;
+    color: grey;
+    font-weight: 300;
+    margin-bottom: 2.2rem;
+}
+
+
+/* Footer-Section Ends------------------------------------------------------------------------------------------------------------------------ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+

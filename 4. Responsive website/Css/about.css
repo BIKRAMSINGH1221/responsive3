@@ -1,0 +1,523 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+html {
+    font-size: 10px;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
+}
+
+body::before {
+    content: "";
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(../Images/background.jpg);
+    background-position: left;
+    background-size: cover;
+    height: 40%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+
+}
+
+.heading-About-us {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(10px, 45px);
+    font-size: 3.2rem;
+    color: white;
+
+
+}
+
+
+
+
+
+/* Navbar Section Starts-----------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+nav {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3.5rem 4.5rem;
+}
+
+
+.logo {
+    width: 12.2rem;
+    height: 38px;
+}
+
+
+.menu ul {
+    display: flex;
+    list-style: none;
+}
+
+.menu ul li {
+    padding: 2.0rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+}
+
+.menu ul li a::after {
+    content: "";
+    width: 0%;
+    height: 3px;
+    background: #f44336;
+    display: block;
+    transition: 0.5s;
+    margin: auto;
+}
+
+.menu ul li a:hover::after {
+    width: 100%;
+
+}
+
+.menu ul li a:hover {
+    color: #f44336;
+}
+
+.menu ul i,
+.menu i {
+    display: none;
+}
+
+
+/* Navbar Section Ends--------------------------------------------------------------------------------------------------------- */
+/* Hero Section Starts--------------------------------------------------------------------------------------------------------- */
+
+
+.Hero-Section {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 80%;
+    margin: auto;
+    position: relative;
+    bottom: -22.3rem;
+    padding: 1.2rem;
+    overflow: hidden;
+}
+
+.Hero-Content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 5.5rem;
+    position: relative;
+    top: -3.8rem;
+    left: -5.1rem;
+    text-align: left;
+}
+
+
+.Hero-Content h3 {
+    font-size: 3.5rem;
+    font-weight: 900;
+}
+
+
+.Hero-Content p {
+    font-size: 1.2rem;
+    line-height: 1.8em;
+    padding-top: 1.2rem;
+    color: grey;
+    font-weight: 400;
+}
+
+
+
+.image img {
+    height: 330px;
+    width: 499px;
+}
+
+Button {
+    position: relative;
+    top: 2.5rem;
+    padding: 1.2rem 2rem;
+    background-color: transparent;
+    color: #f44336;
+    border: 2px solid rgb(215, 133, 133);
+    cursor: pointer;
+    transition: 1.2s;
+    width: 30%;
+
+}
+
+button::before {
+    content: "";
+    width: 22%;
+    height: .2rem;
+    background: rgb(215, 133, 133);
+    display: block;
+    position: relative;
+    left: -3.8rem;
+    transition: 2.2s;
+    top: .8rem;
+}
+
+button::after {
+    content: "";
+    width: 22%;
+    height: .2rem;
+    background: rgb(215, 133, 133);
+    display: block;
+    position: relative;
+    top: -0.9rem;
+    left: 14.2rem;
+    transition: 2.2s;
+}
+
+
+button:hover {
+    background-color: #f44336;
+    color: white;
+}
+
+button:hover::after,
+button:hover::before {
+    background-color: #f44336;
+}
+
+
+
+/* Hero Section ends--------------------------------------------------------------------------------------------------------- */
+
+
+/* About-Us Section Starts------------------------------------------------------------------------------------------------------------------------ */
+
+.About-us {
+    position: absolute;
+    bottom: -16.9rem;
+    width: 100%;
+    text-align: center;
+
+}
+
+
+.About-us h2 {
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin: 2.5rem;
+}
+
+.About-us p {
+    width: 80%;
+    margin: auto;
+    color: grey;
+    line-height: 1.2;
+    font-size: 1.2rem;
+
+}
+
+/* About-Us Section Ends------------------------------------------------------------------------------------------------------------------------ */
+/* Footer-Section starts------------------------------------------------------------------------------------------------------------------------ */
+
+.Footer {
+    position: absolute;
+    bottom: -28.26rem;
+    width: 100%;
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 2.2;
+    margin-top: 2.2rem;
+}
+
+
+
+
+.fa-brands {
+    color: #d11204;
+    font-size: 1.5rem;
+    padding: 1.2rem;
+    cursor: pointer;
+
+}
+
+.Copyright {
+    font-size: 1rem;
+    color: grey;
+    font-weight: 300;
+    margin-bottom: 2.2rem;
+}
+
+
+/* Footer-Section Ends------------------------------------------------------------------------------------------------------------------------ */
+
+
+
+/* media-query for about section  */
+
+
+@media(max-width:708px) and (min-width:495px) {
+    body {
+        width: 100%;
+        height: 100%;
+        overflow-x: hidden;
+
+
+    }
+
+
+    /* NAVBAR SECTION STARTS*/
+
+    .menu ul {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        background: #f44336;
+        height: 100vh;
+        width: 30.0rem;
+        right: -50.0rem;
+        top: 0;
+        text-align: left;
+        z-index: 2;
+
+    }
+
+
+    .menu ul i,
+    .menu i {
+        display: block;
+        color: white;
+        margin: 1.0rem;
+        font-size: 2.2rem;
+        cursor: pointer;
+        margin-bottom: 2.0rem;
+    }
+
+    .menu ul li a {
+        padding: 2.0rem;
+    }
+
+
+
+    .menu ul li a::after {
+        content: "";
+        width: 0%;
+        height: 3px;
+        background: #050d2b;
+        display: block;
+        transition: 0.5s;
+        margin: auto;
+    }
+
+    .menu ul li a:hover::after {
+        width: 100%;
+
+    }
+
+    .menu ul li a:hover {
+        color: #020202;
+    }
+
+    /* NAVBAR SECTION ENDS*/
+    /* HERO SECTION STARTS*/
+
+    .Hero-Section {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .Hero-Content {
+        width: 120%;
+        padding: 5.2rem;
+        margin: auto;
+    }
+
+    .Hero-Content h3 {
+        font-size: 2rem;
+        width: 125%;
+        margin-top: 1.2rem;
+    }
+
+    .Hero-Content p {
+        font-size: 1.2rem;
+        text-align: left;
+        color: grey;
+        font-weight: 400;
+    }
+
+    .Hero-Content button {
+        width: 42%;
+        margin: auto;
+    }
+
+    /* HERO SECTION ENDS*/
+    /* ABOUT-US SECTION STARTS*/
+
+
+    .About-us {
+        position: absolute;
+        bottom: -49.5rem;
+    }
+
+    .About-us-content p {
+        font-size: 1rem;
+        text-align: left;
+
+    }
+
+    .Footer {
+        bottom: -63.36rem;
+    }
+
+
+    /* ABOUT-US SECTION ENDS*/
+
+
+
+}
+
+
+/* Media query for mobiles */
+
+
+@media(max-width:495px) {
+
+    body {
+        width: 100%;
+        height: 100%;
+        overflow-x: scroll;
+
+
+    }
+
+
+    /* NAVBAR SECTION STARTS*/
+
+    .menu ul {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        background: #f44336;
+        height: 100vh;
+        width: 30.0rem;
+        right: -50.0rem;
+        top: 0;
+        text-align: left;
+        z-index: 2;
+
+    }
+
+
+    .menu ul i,
+    .menu i {
+        display: block;
+        color: white;
+        margin: 1.0rem;
+        font-size: 2.2rem;
+        cursor: pointer;
+        margin-bottom: 2.0rem;
+    }
+
+    .menu ul li a {
+        padding: 2.0rem;
+    }
+
+
+
+    .menu ul li a::after {
+        content: "";
+        width: 0%;
+        height: 3px;
+        background: #050d2b;
+        display: block;
+        transition: 0.5s;
+        margin: auto;
+    }
+
+    .menu ul li a:hover::after {
+        width: 100%;
+
+    }
+
+    .menu ul li a:hover {
+        color: #020202;
+    }
+
+
+    /* NAVBAR SECTION ENDS*/
+    /* HERO SECTION STARTS*/
+
+    .Hero-Section {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .Hero-Content {
+        width: 130%;
+        padding: 5.2rem;
+        margin: auto;
+    }
+
+    .Hero-Content h3 {
+        font-size: 2rem;
+        width: 125%;
+        margin-top: 1.2rem;
+    }
+
+    .Hero-Content p {
+        font-size: 1.2rem;
+        text-align: left;
+        color: grey;
+        font-weight: 400;
+    }
+
+    .Hero-Content button {
+        width: 71%;
+        margin: auto;
+    }
+
+    /* HERO SECTION ENDS*/
+    /* ABOUT-US SECTION STARTS*/
+
+
+    .About-us {
+        position: absolute;
+        bottom: -79.5rem;
+    }
+
+    .About-us-content p {
+        font-size: 1rem;
+        text-align: left;
+
+    }
+
+    .Footer {
+        bottom: -89.36rem;
+    }
+
+
+
+
+
+
+
+    /* ABOUT-US SECTION ENDS*/
+
+
+
+}

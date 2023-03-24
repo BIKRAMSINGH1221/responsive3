@@ -1,0 +1,581 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+html {
+    font-size: 10px;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
+}
+
+body::before {
+    content: "";
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(../Images/background.jpg);
+    background-position: left;
+    background-size: cover;
+    height: 40%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+
+}
+
+.heading-About-us {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(10px, 45px);
+    font-size: 3.2rem;
+    color: white;
+
+
+}
+
+
+
+
+
+/* Navbar Section Starts-----------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+nav {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3.5rem 4.5rem;
+}
+
+
+.logo {
+    width: 12.2rem;
+    height: 38px;
+}
+
+
+.menu ul {
+    display: flex;
+    list-style: none;
+}
+
+.menu ul li {
+    padding: 2.0rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+}
+
+.menu ul li a::after {
+    content: "";
+    width: 0%;
+    height: 3px;
+    background: #f44336;
+    display: block;
+    transition: 0.5s;
+    margin: auto;
+}
+
+.menu ul li a:hover::after {
+    width: 100%;
+
+}
+
+.menu ul li a:hover {
+    color: #f44336;
+}
+
+.menu ul i,
+.menu i {
+    display: none;
+}
+
+
+/* Navbar Section Ends--------------------------------------------------------------------------------------------------------- */
+/* Body Section Starts--------------------------------------------------------------------------------------------------------- */
+
+.body{
+    width: 76%;
+    margin: auto;
+}
+
+
+.Main-Body{
+    display: flex;
+    margin-top: 29.9rem;
+}
+
+.img{
+    flex-basis: 50%;
+}
+.img img{
+    height: 53.2rem;
+    width: 76.2rem;
+}
+
+.img h3{
+    margin: 16px 0px 30px 0px;
+    font-size: 2.2rem;
+}
+
+.img p{
+    font-size: 1.3rem;
+    color: grey;
+    line-height: 1.4;
+    word-spacing: 1.2px;
+}
+
+.img form{
+    display: flex;
+    flex-direction: column;
+    margin: 3.2rem 0rem;
+    border: 2px solid #d0cbcb;
+    padding: 1.2rem 1rem;
+}
+
+.img form p{
+    font-weight: 700;
+    color: black;
+    font-size: 2rem;
+    margin: 1.2rem;
+}
+
+.img form input,.img form textarea{
+    margin: 1.2rem;
+    padding: 0.5rem;
+    display: block;
+    background-color: #dadadae6;
+    color: black;
+    border: 1px solid grey;
+}
+
+
+
+
+
+
+Button {
+    padding: 0.5rem 1.2rem;
+    background-color: transparent;
+    color: #f44336;
+    border: 2px solid rgb(215, 133, 133);
+    cursor: pointer;
+    transition: 1.2s;
+    width: 26%;
+    margin: 1.5rem;
+
+}
+
+button::before {
+    content: "";
+    width: 16%;
+    height: 0.2rem;
+    background: rgb(215, 133, 133);
+    display: block;
+    position: relative;
+    left: -2.6rem;
+    transition: 2.2s;
+    top: 0.8rem;
+}
+
+button::after {
+    content: "";
+    width: 16%;
+    height: 0.2rem;
+    background: rgb(215, 133, 133);
+    display: block;
+    position: relative;
+    top: -0.9rem;
+    left: 16.4rem;
+    transition: 2.2s;
+}
+
+
+button:hover {
+    background-color: #f44336;
+    color: white;
+}
+
+button:hover::after,
+button:hover::before {
+    background-color: #f44336;
+}
+
+.Content{
+    flex-basis: 50%;
+    margin: 0rem 2.2rem;
+}
+
+.Content h2{
+    display: block;
+    background-color: #f44336;
+    width: 100%;
+    text-align: center;
+    padding: 0.7rem;
+    color: white;
+    margin-bottom: 1.2rem;
+    font-weight: 300;
+}
+
+.Categories{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.8rem;
+    line-height: 2;
+}
+
+
+
+
+
+/* Body Section Ends--------------------------------------------------------------------------------------------------------- */
+
+
+
+
+/* About-Us Section Starts------------------------------------------------------------------------------------------------------------------------ */
+
+.About-us {
+    position: absolute;
+    bottom: -154.9rem;
+    width: 100%;
+    text-align: center;
+
+}
+
+
+.About-us h2 {
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin: 2.5rem;
+}
+
+.About-us p {
+    width: 80%;
+    margin: auto;
+    color: grey;
+    line-height: 1.2;
+    font-size: 1.2rem;
+
+}
+
+/* About-Us Section Ends------------------------------------------------------------------------------------------------------------------------ */
+/* Footer-Section starts------------------------------------------------------------------------------------------------------------------------ */
+
+.Footer {
+    position: absolute;
+    bottom: -167.26rem;
+    width: 100%;
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 2.2;
+    margin-top: 2.2rem
+    
+}
+
+
+
+
+.fa-brands {
+    color: #d11204;
+    font-size: 1.5rem;
+    padding: 1.2rem;
+    cursor: pointer;
+
+}
+
+.Copyright {
+    font-size: 1rem;
+    color: grey;
+    font-weight: 300;
+    margin-bottom: 2.2rem;
+}
+
+
+/* Footer-Section ends------------------------------------------------------------------------------------------------------------------------ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media-query for about section  */
+
+
+@media(max-width:708px) and (min-width:495px) {
+    body {
+        width: 100%;
+        height: 100%;
+        overflow-x: hidden;
+
+
+    }
+
+
+    /* NAVBAR SECTION STARTS*/
+
+    .menu ul {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        background: #f44336;
+        height: 100vh;
+        width: 30.0rem;
+        right: -50.0rem;
+        top: 0;
+        text-align: left;
+        z-index: 2;
+
+    }
+
+
+    .menu ul i,
+    .menu i {
+        display: block;
+        color: white;
+        margin: 1.0rem;
+        font-size: 2.2rem;
+        cursor: pointer;
+        margin-bottom: 2.0rem;
+    }
+
+    .menu ul li a {
+        padding: 2.0rem;
+    }
+
+
+
+    .menu ul li a::after {
+        content: "";
+        width: 0%;
+        height: 3px;
+        background: #050d2b;
+        display: block;
+        transition: 0.5s;
+        margin: auto;
+    }
+
+    .menu ul li a:hover::after {
+        width: 100%;
+
+    }
+
+    .menu ul li a:hover {
+        color: #020202;
+    }
+
+
+    /* NAVBAR SECTION ENDS*/
+    /* BODY SECTION STARTS*/
+    .body{
+        width: 75%;
+        margin: auto;
+    }
+    
+    
+    .Main-Body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 24.9rem;
+       
+    }
+
+    .img img{
+        height: 36.2rem;
+        width: 51.2rem;
+    }
+
+    .img{
+        flex-basis: 70%
+      
+    
+    }
+
+
+    .About-us{
+        bottom: -207.9rem;
+    }
+
+    .Footer{
+        bottom: -220.26rem;
+    }
+
+    .Content{
+        width: 51.9rem;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Media query for mobiles */
+
+
+@media(max-width:495px) {
+
+    body {
+        width: 100%;
+        height: 100%;
+        overflow-x: hidden;
+
+
+    }
+
+
+    /* NAVBAR SECTION STARTS*/
+
+    .menu ul {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        background: #f44336;
+        height: 100vh;
+        width: 30.0rem;
+        right: -50.0rem;
+        top: 0;
+        text-align: left;
+        z-index: 2;
+
+    }
+
+
+    .menu ul i,
+    .menu i {
+        display: block;
+        color: white;
+        margin: 1.0rem;
+        font-size: 2.2rem;
+        cursor: pointer;
+        margin-bottom: 2.0rem;
+    }
+
+    .menu ul li a {
+        padding: 2.0rem;
+    }
+
+
+
+    .menu ul li a::after {
+        content: "";
+        width: 0%;
+        height: 3px;
+        background: #050d2b;
+        display: block;
+        transition: 0.5s;
+        margin: auto;
+    }
+
+    .menu ul li a:hover::after {
+        width: 100%;
+
+    }
+    
+    .menu ul li a:hover {
+        color: #020202;
+    }
+    
+    
+    /* NAVBAR SECTION ENDS*/
+
+
+    /* BODY SECTION STARTS*/
+    .body{
+        width: 75%;
+        margin: auto;
+    }
+    
+    .heading-About-us{
+    font-size: 2.1rem;
+    width: 70%;
+    margin: auto;
+
+    }
+
+    .Main-Body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 24.9rem;
+       
+    }
+
+    .img img{
+        height: 28.2rem;
+        width: 33.2rem;
+        margin-left: -1.8rem;
+    }
+    
+
+  
+    
+
+
+    .About-us{
+        bottom: -312.9rem;
+    }
+
+    .Footer{
+        bottom: -322.26rem;
+    }
+
+    .Content{
+        width: 28.9rem;
+    }
+
+    Button{
+        width: 67%;
+    }
+
+
+
+    
+
+
+
+
+}
